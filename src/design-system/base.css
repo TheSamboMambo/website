@@ -1,0 +1,54 @@
+/*
+ * Base & Paper Texture Styles
+ * Full-bleed textured paper background matching questionare.png.
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  color: var(--nb-ink);
+  font-family: var(--nb-font-mono);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--nb-bg-paper);
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      var(--nb-bg-stripe) 3px,
+      var(--nb-bg-stripe) 4px
+    );
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nb-container {
+  width: 100%;
+  max-width: var(--nb-container-max);
+  margin-inline: auto;
+  padding-inline: clamp(1.125rem, 4vw, 2.5rem);
+}

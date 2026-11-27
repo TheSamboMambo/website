@@ -1,0 +1,157 @@
+/*
+ * Reusable Neo-Brutalist Component Primitives
+ */
+
+/* Brand Mark (e.g., S- [TECH]) */
+.nb-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: var(--nb-font-display);
+  font-weight: 700;
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.nb-brand__highlight {
+  display: inline-block;
+  padding: 0.2rem 0.45rem;
+  background-color: var(--nb-accent-mint);
+  border: var(--nb-border-width) solid var(--nb-border-color);
+}
+
+/* Display Heading */
+.nb-heading {
+  font-family: var(--nb-font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--nb-ink);
+}
+
+.nb-heading--hero {
+  font-size: clamp(2.1rem, 6vw, 3.4rem);
+}
+
+.nb-heading--section {
+  font-size: clamp(0.85rem, 1.8vw, 0.95rem);
+  font-family: var(--nb-font-mono);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* Body Copy */
+.nb-copy {
+  font-family: var(--nb-font-mono);
+  font-size: clamp(0.92rem, 2vw, 1rem);
+  line-height: 1.7;
+  color: var(--nb-ink);
+}
+
+.nb-copy--muted {
+  color: var(--nb-ink-muted);
+  font-size: clamp(0.82rem, 1.8vw, 0.9rem);
+}
+
+/* Card */
+.nb-card {
+  background-color: var(--nb-bg-surface);
+  border: var(--nb-border-width) solid var(--nb-border-color);
+  box-shadow: var(--nb-shadow-md);
+  padding: clamp(1.25rem, 3.5vw, 2rem);
+}
+
+.nb-card--flat {
+  box-shadow: none;
+}
+
+.nb-card__label {
+  display: inline-block;
+  margin-bottom: var(--nb-space-3);
+  padding: 0.2rem 0.5rem;
+  font-family: var(--nb-font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: var(--nb-border-width) solid var(--nb-border-color);
+  background-color: var(--nb-bg-paper);
+}
+
+.nb-card__label--mint {
+  background-color: var(--nb-accent-mint);
+}
+
+.nb-card__label--lavender {
+  background-color: var(--nb-accent-lavender);
+}
+
+/* Divider */
+.nb-divider {
+  width: 100%;
+  height: var(--nb-border-width);
+  background-color: var(--nb-border-color);
+  border: 0;
+  margin: 0;
+}
+
+/* Button */
+.nb-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: auto;
+  padding: 0.9rem 1.5rem;
+  font-family: var(--nb-font-mono);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--nb-ink);
+  background-color: var(--nb-bg-surface);
+  border: var(--nb-border-width) solid var(--nb-border-color);
+  box-shadow: var(--nb-shadow-md);
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+}
+
+.nb-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: var(--nb-shadow-lg);
+}
+
+.nb-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 var(--nb-border-color);
+}
+
+.nb-btn:focus-visible {
+  outline: 3px solid var(--nb-ink);
+  outline-offset: 3px;
+}
+
+.nb-btn--lavender {
+  background-color: var(--nb-accent-lavender);
+}
+
+.nb-btn--mint {
+  background-color: var(--nb-accent-mint);
+}
+
+.nb-btn--dark {
+  background-color: var(--nb-ink);
+  color: var(--nb-bg-surface);
+}
+
+.nb-btn--full {
+  width: 100%;
+}
+
+.nb-btn--lg {
+  padding: clamp(1rem, 2.8vw, 1.25rem) clamp(1.5rem, 4vw, 2.25rem);
+  font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+}

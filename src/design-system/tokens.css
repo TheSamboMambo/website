@@ -1,0 +1,48 @@
+/*
+ * Neo-Brutalist Minimalist Design Tokens
+ * Portable, framework-agnostic CSS custom properties for reuse across projects.
+ */
+:root {
+  /* Surfaces & Paper */
+  --nb-bg-paper: #f3f2ed;
+  --nb-bg-surface: #faf9f5;
+  --nb-bg-stripe: rgba(20, 20, 20, 0.035);
+
+  /* Ink & Borders */
+  --nb-ink: #141414;
+  --nb-ink-muted: #4b4b48;
+  --nb-border-color: #141414;
+  --nb-border-width: 2px;
+
+  /* Pastel Accents (inspired by homepage.png & questionare.png) */
+  --nb-accent-mint: #b8e8d4;
+  --nb-accent-lavender: #c8bbf0;
+  --nb-accent-peach: #f7cbb2;
+  --nb-accent-yellow: #f7e999;
+
+  /* Hard Offset Shadows */
+  --nb-shadow-sm: 2px 2px 0 var(--nb-border-color);
+  --nb-shadow-md: 4px 4px 0 var(--nb-border-color);
+  --nb-shadow-lg: 6px 6px 0 var(--nb-border-color);
+
+  /* Typography */
+  --nb-font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --nb-font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Radii (strictly sharp/minimalist) */
+  --nb-radius-none: 0px;
+  --nb-radius-sm: 2px;
+
+  /* Spacing Scale */
+  --nb-space-1: 0.25rem;
+  --nb-space-2: 0.5rem;
+  --nb-space-3: 0.75rem;
+  --nb-space-4: 1rem;
+  --nb-space-5: 1.5rem;
+  --nb-space-6: 2rem;
+  --nb-space-7: 3rem;
+  --nb-space-8: 4rem;
+
+  /* Layout */
+  --nb-container-max: 1040px;
+}
